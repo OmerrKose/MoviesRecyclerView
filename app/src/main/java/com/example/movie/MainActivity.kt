@@ -19,9 +19,13 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
     private fun getModels(): MutableList<Movies> {
         return mutableListOf(
-            Movies(movieName = "Inception")
+                Movies(original_title = "Inception", director = "Christopher Nolan"),
+                Movies(original_title = "The Dark Knight Rises", director = "Christopher Nolan"),
+                Movies(original_title = "Prestige", director = "Christopher Nolan"),
+                Movies(original_title = "Gladiator", director = "Ridley Scott")
         )
     }
 }

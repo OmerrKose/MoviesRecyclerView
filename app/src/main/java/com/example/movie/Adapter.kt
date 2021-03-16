@@ -9,9 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 class Adapter(private val movieList : MutableList<Movies>) : RecyclerView.Adapter<Adapter.ModelViewHolder>() {
     class ModelViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val movieName : TextView = view.findViewById(R.id.movieName)
+        private val director : TextView = view.findViewById(R.id.director)
 
         fun bindItems(item : Movies) {
-            movieName.text = item.movieName
+            movieName.text = item.original_title
+            director.text = item.director
         }
     }
 

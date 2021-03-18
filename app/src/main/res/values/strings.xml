@@ -2,4 +2,5 @@
     <string name="app_name">Movie</string>
     <string name="movieName">movieName</string>
     <string name="director">Director</string>
+    <string name="id">Id</string>
 </resources>

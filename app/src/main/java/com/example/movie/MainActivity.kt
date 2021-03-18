@@ -6,10 +6,13 @@ import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
+private const val BASE_URL = "https://developers.themoviedb.org/3/movies/get-movie-details"
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 
         val rv = findViewById<RecyclerView>(R.id.recyclerView)
         val moviesAdapter = Adapter(getModels())

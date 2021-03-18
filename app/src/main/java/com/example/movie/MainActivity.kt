@@ -17,15 +17,14 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
             adapter = moviesAdapter
         }
-
     }
 
     private fun getModels(): MutableList<Movies> {
         return mutableListOf(
-                Movies(title = "Inception", director = "Christopher Nolan"),
-                Movies(title = "The Dark Knight Rises", director = "Christopher Nolan"),
-                Movies(title = "Prestige", director = "Christopher Nolan"),
-                Movies(title = "Gladiator", director = "Ridley Scott")
+            Movies(title = "Inception", director = "Christopher Nolan", id = 1),
+            Movies(title = "The Dark Knight Rises", director = "Christopher Nolan", id = 2),
+            Movies(title = "Prestige", director = "Christopher Nolan", id = 3),
+            Movies(title = "Gladiator", director = "Ridley Scott", id = 4)
         )
     }
 }

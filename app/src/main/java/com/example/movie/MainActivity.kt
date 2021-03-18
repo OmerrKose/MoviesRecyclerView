@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val rv = findViewById<RecyclerView>(R.id.recyclerView)
         val moviesAdapter = Adapter(getModels())
         rv.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayout.VERTICAL, false)
+            layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
             adapter = moviesAdapter
         }
 
@@ -22,10 +22,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun getModels(): MutableList<Movies> {
         return mutableListOf(
-                Movies(original_title = "Inception", director = "Christopher Nolan"),
-                Movies(original_title = "The Dark Knight Rises", director = "Christopher Nolan"),
-                Movies(original_title = "Prestige", director = "Christopher Nolan"),
-                Movies(original_title = "Gladiator", director = "Ridley Scott")
+                Movies(title = "Inception", director = "Christopher Nolan"),
+                Movies(title = "The Dark Knight Rises", director = "Christopher Nolan"),
+                Movies(title = "Prestige", director = "Christopher Nolan"),
+                Movies(title = "Gladiator", director = "Ridley Scott")
         )
     }
 }

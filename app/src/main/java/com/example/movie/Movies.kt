@@ -1,3 +1,6 @@
 package com.example.movie
 
-data class Movies(val original_title: String?, val director: String?)
+data class Movies(
+        @SerializedName("id") val id : Int?,
+        @SerializedName("title") val title: String?,
+        @SerializedName("title") val director: String?)

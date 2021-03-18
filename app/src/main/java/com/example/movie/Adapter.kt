@@ -12,7 +12,7 @@ class Adapter(private val movieList : MutableList<Movies>) : RecyclerView.Adapte
         private val director : TextView = view.findViewById(R.id.director)
 
         fun bindItems(item : Movies) {
-            movieName.text = item.original_title
+            movieName.text = item.title
             director.text = item.director
         }
     }
